@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 800px;
+}
+.headder{
+    width:100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color:white;
+    opacity: 0.7;
+}
+.logo{
+    margin-left: 50px;
+    float: left;
+}
+
+.ulheadder{ 
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+    
+}  
+.ulheadder li{
+    display: inline;
+    margin: 0px 60px;
+    line-height: 60px;
+}
+.headder .headdercontent a{
+    text-decoration: none;
+    color: rgb(190, 79, 79);
+    font-size: 19px;
+}
+.home{
+    height: 100vh;
+    background-image: url(../images/homeback31.jpg);
+    background-size: cover;
+    position: relative;
+}
+.homeoverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color:rgba(0, 0,0, 0.4);
+}
+.homecontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ .hometitle1,.homep1,.homep2{
+    color: white;
+    margin: 10px 0px;
+    font-style: italic;
+    font-size: 19px;
+
+}
+ .homebutton1 ,.homebutton2{
+    padding: 16px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    
+    
+}
+.btnhome:hover{
+    opacity: 0.5;
+}
+.container1 ,.container2 ,.container3 ,.container4 ,.container5 ,.container6{
+    width: 90%;
+    margin: auto;
+    /* background-color: blue; */
+}
+.servicescontentparent ,.appetizersparent ,.soupparent ,.friedchikenparent ,.varietiesparent{
+    height: 100vh;
+    /* background-color: rgb(250, 247, 247); */
+    width: 80%;
+    margin: auto;
+    /* position: relative; */
+    
+}
+.servicescontenttitle ,.appetizerstitle ,.souptitle ,.friedchikentitle ,.varietiestitle{
+    text-align: center;
+    /* padding-left: 40%; */
+    padding-top: 150px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.servicesinfotitle{
+    padding-top: 80px;
+    font-size: 20px;
+}
+.servicesitem ,.appetizerscontentitem ,.soupcontentitem ,.friedchikencontentitem ,.varietiescontentitem{
+    float: left;
+    margin: 8% 4%;
+    width: 200px;
+    height: 450px;
+    /* background-color: brown; */
+    width: 25%;
+    text-align: center;
+    padding-left: 10px;
+    position: relative;
+
+}
+ .servicesinfop ,.varietiesinfo{ 
+    margin-top: 12px;
+}
+/* .servicesitem2 .servicesimage{
+    padding-top: 20px;
+} */
+.servicesitem2{
+    margin: 8% 4%;
+}
+.servicesitem:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0px;
+    left: 0;
+    background-color: rgb(137, 135, 135);
+    opacity: 0;
+}
+.servicesitem:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.appetizerscontentitem ,.soupcontentitem ,.friedchikencontentitem ,.varietiescontentitem{
+    position: relative;
+}
+.appetizeroverlay ,.soupoverlay ,.friedchikenoverlay{
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility:hidden;
+    opacity: 0;
+
+}
+.appetizerscontentitem:hover .appetizeroverlay{
+    visibility: visible;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.appetizeroverlay i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: rgb(76, 9, 9);
+    margin-left: auto;
+    font-size: 25px;
+    line-height: 50px;
+    
+}
+.soupcontentitem:hover .soupoverlay{
+    visibility: visible;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.soupoverlay i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: rgb(76, 9, 9);
+    margin-left: auto;
+    font-size: 25px;
+    line-height: 50px;
+    
+}
+.friedchikencontentitem:hover .friedchikenoverlay{
+    visibility: visible;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.friedchikenoverlay i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: rgb(76, 9, 9);
+    margin-left: auto;
+    font-size: 25px;
+    line-height: 50px;
+    
+}
+.varietiesparent{
+    position: relative;
+}
+.varietiescontentitem:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(222, 218, 213);
+    opacity: 0;
+
+}
+.varietiescontentitem:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+
+
+
